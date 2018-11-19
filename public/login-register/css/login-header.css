@@ -1,0 +1,68 @@
+iframe,body{
+    margin:0;
+    padding:0;
+}
+iframe{
+    height:0;
+}
+.f-dn{
+    display:none;
+}
+div#d1 a::after,.clearfix::after,div#d3.clearfix::after,#d4.clearfix::after,#d4.clearfix::after{
+    visibility:hidden;
+    display:block;
+    content:"";
+    clear:both;
+}
+a.logokaola,a.logokaolalt{
+    text-decoration:none;
+}
+header.docHead{
+    width:1336px;
+    height:101px;
+    border-bottom:1px solid #e8e8ea;
+    background:#fff;
+    position:relative;
+}
+div.docHeadWrap{
+    width:1000px;
+    height:100px;
+    margin:0 auto;
+    position:relative;
+}
+div.docHeadWrap a.logokaola{
+    width:330px;
+    height:65px;
+    position:absolute;
+    left:0;
+    top:20px;
+    background:url(../img/logo.png) no-repeat;
+    background-position:left center;
+    cursor:pointer;
+    outline:none;
+    line-height:65px;
+}
+div.docHeadWrap .logo{
+    float:left;
+    width:180px;
+}
+div.docHeadWrap .logokaolalt{
+    position:absolute;
+    left:0;
+    top:5px;
+    width:162px;
+    height:40px;
+    outline:none;
+    line-height:40px;
+    cursor:pointer;
+    background-repeat:no-repeat;
+    background-image:url(../img/logo.png);
+}
+#topimg{
+    position:absolute;
+    top:0;
+    left:458px;
+    width:504px;
+    height:100px;
+    background:url(../img/3.jpg)
+}

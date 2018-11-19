@@ -1,0 +1,387 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+div,p{
+	display:block;
+	margin:0 ;
+	padding:0 ;
+}
+input{
+	width:180px;
+	background:#fff;
+	border:0;
+	outline:0;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	color:#666;
+	outline:none;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+/*中间的样式*/
+div.login-banner{
+	background-color:#f8f8f8;
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-image:url(../img/bg.jpg);
+	width:100%;
+	height:520px;
+}
+div.m-loginBody{
+	position:relative;
+	width:1000px;
+	height:520px;
+	margin:0 auto;
+}
+div.m-loginBody .hotarea{
+	position:absolute;
+	left:10px;
+	top:100px;
+	width:400px;
+	height:280px;
+	background-image:url(../img/blank.gif);
+}
+div.m-loginWrap{
+	position:absolute;
+	top:48px;
+	right:40px;
+	border:1px solid #eaeaea;
+	background:#fff;
+	font-size:12px;
+	width:352px;
+	height:394px;
+}
+div.loginForm{
+	float:left;
+	width:350px;
+	height:392px;
+}
+div.loginForm .top{
+	width:350px;
+	height:52px;
+	border-bottom:1px solid #ddd;
+	position:relative;
+	background-color:#f8f8f8;
+	font-size:16px;
+	line-height:52px;
+	color:#333;
+}
+.loginForm .top div{
+	float:left;
+	width:175px;
+	height:52px;
+	text-align:center;
+	cursor:pointer;
+	font-weight:bold;
+}
+.loginForm .top div:hover{
+	color:#e31436;
+}
+.loginForm .top span.line{
+	position:absolute;
+	left:175px;
+	top:17px;
+	width:0;
+	height:20px;
+	border-right:1px solid #ddd;
+}
+div.loginbox{
+	position:absolute;
+	top:53px;
+	left:0;
+	width:350px;
+}
+
+div.loginbox-p{
+	float:left;
+	width:350px;
+	height:298.47px;
+	margin:0;
+	padding:20px 40px 15px 40px;
+	position:relative;
+}
+div.login-form{
+	width:270px;
+	height:263.469px;
+}
+#d1{
+	width:270px;
+	height:24px;
+	padding-bottom:10px;
+	margin:0 auto;
+	font:12px/1.14 "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+}
+#d1 a{
+	height:14px;
+	padding-left:17px;
+	line-height:14px;
+	background:url(../img/phone-suo.png) no-repeat;
+	background-position:0px 0px;
+	float:right;
+}
+div#d2{
+	width:270px;
+	height:36px;
+	border:1px solid #c5cddb;
+	background:#fff;
+	font-size:12px;
+}
+div#d2:hover,#d4 div.pwd:hover,#d5:hover{
+	border:1px solid #4aafe9;
+}
+div.u-logo{
+	width:39px;
+	height:34px;
+	padding:0 11px;
+	float:left;
+	text-align:center;
+}
+div.u-logo-img1{
+	background:url(../img/phone-suo.png) no-repeat;
+	background-position:-36px -34px;
+	width:17px;
+	height:18px;
+	margin-top:8px;
+}
+div.u-input{
+	width:180px;
+	height:30px;
+	margin:2px 0;
+	position:relative;
+	float:left;
+}
+div.u-input input{
+	padding-left:0;
+	height:30px;
+	font-size:14px;
+	font-weight:normal;
+	color:#333;
+}
+#d3{
+	width:270px;
+	height:28.47px;
+	margin-top:16px;
+	position:relative;
+}
+div.ScapTcha{
+	width:270px;
+	height:28.469px;
+}
+#d3 div.bg{
+	width:270px;
+	height:28.797px;
+	border-radius:13.4px;
+	background-color:#eee;
+	border:1px solid #ddd;
+}
+#d3 div.btn{
+	width:60.3px;
+	height:26.8px;
+	margin-left:1px;
+	cursor:pointer;
+	position:absolute;
+	display:block;
+	left:1px;
+}
+div.btn img{
+	height:26.8px;
+	width:60.3px;
+	position:absolute;
+}
+div.btn-text{
+	width:268px;
+	height:28px;
+	font-size:12px;
+	line-height:28px;
+	position:absolute;
+	left:30.15px;
+	opacity:1.04559;
+	color:#a8a8a8;
+	text-align:center;
+}
+#d4{
+	width:270px;
+	height:36px;
+	margin-top:32px;
+}
+#d4 .pwd{
+	width:270px;
+	height:36px;
+	border:1px solid #c5cddb;
+	background:#fff;
+	font-size:12px;
+	position:relative;
+}
+#d4 .btn-send{
+	position:absolute;
+	right:0;
+	width:97px;
+	height:34px;
+	margin-left:10px;
+}
+#d4 .btn-send a{
+	display:block;
+	width:97px;
+	height:34px;
+	border-left:1px solid #d5d5d5;
+	font-size:14px;
+	background-color:#eee;
+	line-height:32px;
+	text-align:center;
+}
+#d4 .pwd-input{
+	width:138px;
+	height:30px;
+	margin:2px 0 3px 0;
+	position:relative;
+	float:left;
+}
+#d4 .pwd-input input.pwdinput{
+	padding-left:8px;
+	margin:0 auto;
+	width:138px;
+	height:30px;
+	font-size:14px;
+	font-weight:normal;
+	color:#333;
+} 
+div.change-email{
+	width:270px;
+	height:17px;
+	margin-top:6px;
+}
+
+
+div.btn-box{
+	width:270px;
+	height:36px;
+	margin-top:7px;
+	margin-bottom:10px;
+}
+div.btn-box a{
+	display:block;
+	width:270px;
+	height:36px;
+	background:#e31436;
+	color:#fff;
+	font-size:14px;
+	line-height:36px;
+	border-radius:2px;
+	text-align:center;
+}
+div.item{
+	width:270px;
+	height:31px;
+	padding:0 0 15px 0;
+	color:#999;
+}
+div.item .btn-read{
+	width:104px;
+	height:16px;
+	float:left;
+	margin-right:8px;
+}
+div.item .btn-read .u-checkbox{
+	float:left;
+	width:16px;
+	height:16px;
+	border:1px solid #aaa;
+	color:#999;
+	font-size:12px;
+	cursor:pointer;
+}
+#read{
+	float:left;
+	height:16px;
+	padding-left:8px;
+	font-size:12px;
+	color:#999;
+	line-height:17px;
+}
+#read:hover{
+	color:#e31436;
+}
+div.item a{
+	float:right;
+	height:12px;
+}
+div.item a:hover{
+	color:#e31436;
+}
+/*输入框的底部*/
+div.loginBottom{
+	position:absolute;
+	top:352px;
+	width:350px;
+	height:41px;
+	padding:10px 40px 10px 40px;
+	background-color:#f8f8f8;
+	border:1px solid #ddd;
+	font-size:14px;
+}
+
+ul.logo-4 li{
+	float:left;
+	width:22px;
+	height:22px;
+	margin-right:10px;
+}
+ul.logo-4 li a.logo1{
+	display:inline-block;
+	background:url(../img/all.png) no-repeat;
+	background-position:-760px -401px;
+	width:22px;
+	height:22px;
+}
+ul.logo-4 li a.logo2{
+	display:inline-block;
+	background:url(../img/all.png) no-repeat;
+	background-position:-792px -401px;
+	width:22px;
+	height:22px;
+}
+ul.logo-4 li a.logo3{
+	display:inline-block;
+	background:url(../img/all.png) no-repeat;
+	background-position:-824px -401px;
+	width:22px;
+	height:22px;
+}
+ul.logo-4 li a.logo4{
+	display:inline-block;
+	background:url(../img/all.png) no-repeat;
+	background-position:-856px -401px;
+	width:22px;
+	height:22px;
+}
+div.loginBottom a.phone-login{
+	display:block;
+	float:right;
+	width:105px;
+	line-height:22px;
+	color:#e31436;
+}
+div.loginBottom a.phone-login span{
+	display:inline-block;
+	float:right;
+	width:14px;
+	height:22px;
+	background:url(../img/all.png) no-repeat;
+	background-position:-899px -402px;
+}

@@ -1,0 +1,15 @@
+div,body{
+    margin:0;
+    padding:0;
+}
+iframe{
+    height:100px;
+}
+div{}
+.my_footer{
+    width:1349px;
+    height:16rem;
+}
+.my_header{
+    width:1349px;
+}

@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/my_scroll.js"></script>
+    <title>网易考拉-网易旗舰</title>
+</head>
+<body>
+    <!--1.引入头部-->
+    <header id="header" class="my_header"></header>
+    <!--<header>
+        <iframe src="index-header.html" frameborder="0" class="my_header"></iframe>
+    </header>-->
+    <!--3.头部分页导航条-->
+    <nav class="topTabBox">
+        <div id="topTab" class="clearfix ">
+            <!--左：导航的左边第一栏-->
+            <div id="topCats" class="navitm-cats clearfix">
+                <!--列表头-->
+                <div class="toplevel">
+                    <!--三道杠按钮：下拉-->
+                    <div class="lineicon">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <span>所有分类</span>
+                </div>
+                <!--大型：下拉列表-->
+                <ul class="catitmlst">
+                    
+                </ul>
+            </div>
+            <!--右：导航的右边-->
+            <ul id="funcTab" class="clearfix">
+                <li class="navitm"><a href="#">
+                    首页</a></li>
+                <li class="navitm"><a href="#">
+                    今日限时购</a></li>
+                <li class="navitm"><a href="#">
+                    每日上新</a></li>
+                <li class="navitm"><a href="#">
+                    国家馆</a></li>
+                <li class="navitm"><a href="#">
+                    海外旗舰店</a></li>
+                <li class="navitm"><a href="#">
+                    工厂店</a></li>
+                <li class="navitm"><a href="#">
+                    品质奶粉</a></li>
+                <li class="navitm"><a href="#">
+                    人气面膜</a></li>
+                <li class="navitm"><a href="#">
+                    充值</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--2.主题部分-->
+    <div id="main" class="wrap topBgWrapPos">
+        <!--1.轮播图-->
+        <article class="topBgWrap clearfix">
+            <div class="imgBox">
+                <section id="picBox" class="sliderBox sliderBox2">
+                    <!--轮播的图片-->
+                    <ul id="show_pic">
+                        <!--<li class="showImg"><a class="itm" href="#"><img class="Img" src="img/lb-1.jpg" alt=""></a>
+                        </li>
+                        <li><a class="itm" href="#"><img class="Img" src="img/lb-2.jpg" alt=""></a>
+                        </li>
+                        <li><a class="itm" href="#"><img class="Img" src="img/lb-3.jpg" alt=""></a>
+                        </li>
+                        <li><a class="itm" href="#"><img class="Img" src="img/lb-4.jpg" alt=""></a>
+                        </li>
+                        <li><a class="itm" href="#"><img class="Img" src="img/lb-5.jpg" alt=""></a>
+                        </li>-->
+                    </ul>
+                    <!--轮播小圆点-->
+                    <table class="img_pagebox" style="z-index:1;">
+                        <tbody>
+                            <tr class="img_page">
+                                <td id="icon_num" class="pageBox">
+                                    <span class="w-slbtn">
+                                        <span class="partr">
+                                            <a href="javascript:void(0)" class="idxicon active">
+                                                <i class="dot"></i>
+                                                <span class="num"></span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="idxicon">
+                                                <i class="dot"></i>
+                                                <span class="num"></span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="idxicon">
+                                                <i class="dot"></i>
+                                                <span class="num"></span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="idxicon">
+                                                <i class="dot"></i>
+                                                <span class="num"></span>
+                                            </a>
+                                            <a href="javascript:void(0)" class="idxicon">
+                                                <i class="dot"></i>
+                                                <span class="num"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="control" style="z-index:1;">
+                        <div>
+                            <a href="javascript:void(0)" class="cons prev ani">
+                            </a>
+                            <a href="javascript:void(0)" class="cons next ani">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <!--2.轮播下面的条-->
+        <article class="m-sellpoint">
+            <section class="m-contentwrap f-cb">
+                <div class="sellpoint f-cb">
+                    <a class="itm" href="#">
+                        <i class="iconfont"></i>
+                        <span class="txt">网易自营</span>
+                    </a>
+                    <a class="itm" href="#">
+                        <i class="iconfont"></i>
+                        <span class="txt">全球直采</span>
+                    </a>
+                    <a class="itm" href="#">
+                        <i class="iconfont"></i>
+                        <span class="txt">假一赔十</span>
+                    </a>
+                    <a class="itm" href="#">
+                        <i class="iconfont"></i>
+                        <span class="txt">售后无忧</span>
+                    </a>
+                </div>
+                <div class="download">
+                    <i class="phone"></i>
+                    <a href="#">领考拉1000元新人礼，APP下单更享手机价</a>
+                </div>
+            </section>
+        </article>
+        <!--3.会场列表：一列、图-->
+        <article id="rowOfResource" class="m-rowofx" style="padding-top:20px;">
+            <ul class="j-olduser-row row row-box f-cb">
+                <li class="row-wrap">
+                    <ul class="rowof4 row f-cb">
+                        <!--<li><a class="pic" style="height:332px;" href="#"><img src="img/middle-1.jpg" alt=""></a></li>
+                        <li><a class="pic" style="height:332px;" href="#"><img src="img/middle-2.jpg" alt=""></a></li>
+                        <li><a class="pic" style="height:332px;" href="#"><img src="img/middle-3.jpg" alt=""></a></li>
+                        <li><a class="pic" style="height:332px;" href="#"><img src="img/middle-4.jpg" alt=""></a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <!--4.商品内容：最多！！-->
+        <div class="mainBgWrap clearfix" id="mainBgWrapHome">
+            <!--固定栏:左右-->
+            <aside id="indexleft" class="m-indexleft " style="position:fixed;top:66px;">
+                <a class="topImg" href="#">
+                    <img src="img/manjian.jpg" alt="">
+                </a>
+                <ul class="channel">
+                    <li><a class="j-floor" href="javascript:;">今日限时购</a></li>
+                    <li><a class="j-floor" href="javascript:;">今日上新</a></li>
+                    <li><a class="j-floor" href="javascript:;">热门品牌</a></li>
+                </ul>
+                <ul class="floor">
+                    <li><a class="j-floor" href="javascript:;">母婴专区</a></li>
+                    <li><a class="j-floor" href="javascript:;">美容彩妆</a></li>
+                    <li><a class="j-floor" href="javascript:;">服饰鞋包</a></li>
+                    <li><a class="j-floor" href="javascript:;">家居个护</a></li>
+                    <li><a class="j-floor" href="javascript:;">营养保健</a></li>
+                    <li><a class="j-floor" href="javascript:;">数码家电</a></li>
+                    <li><a class="j-floor" href="javascript:;">运动户外</a></li>
+                </ul>
+                <a class="bottomImg" href="#">
+                    <img src="img/fixed-ewm.jpg" alt="">
+                </a>
+            </aside>
+            
+            <!--今日限时购-->
+            <article id="jrxsg" class="m-dailylimit coverMarginBottom">
+                <h2 class="w-titl w-titl-1 tit w-title-line">
+                    <span class="big">今日限时购</span>本场还剩
+                    <span id="j-dltimebox" class="timebox">
+                        <i>0</i>
+                        <i>2</i>
+                        <span class="split-dot">:</span>
+                        <i>0</i>
+                        <i>0</i>
+                        <span class="split-dot">:</span>
+                        <i>5</i>
+                        <i>1</i>
+                    </span>
+                    <a class="more" href="#">进入限时购频道&gt;</a>
+                </h2>
+                <section class="cnt f-cb">
+                    <ul class="goodslist">
+                        <!--<li class="goods f-cb">
+                            <a class="pic" href="#">
+                                <img src="img/jrxsg-1.jpg" alt="" class="img-lazyload img-lazyloaded">
+                            </a>
+                            <div class="detail">
+                                <h3 class="intro">
+                                    <a href="#">不打针也能拥有水光肌</a>
+                                </h3>
+                                <h3 class="shortTitle">
+                                    <a href="#">JAYJUN 水光再生洗面奶 150毫升</a>
+                                </h3>
+                                <p class="price">
+                                    <b>￥</b>
+                                    2889
+                                    <span>￥</span>
+                                    <del>3889</del>
+                                </p>
+                                <div class="process process-limit">限量500件</div>
+                                <a class="btn f-hover" href="#">立即抢购</a>
+                            </div>
+                        </li>
+                        <li class="goods f-cb">
+                            <a class="pic" href="#">
+                                <img src="img/jrxsg-2.jpg" alt="" class="img-lazyload img-lazyloaded">
+                            </a>
+                            <div class="detail">
+                                <h3 class="intro">
+                                    <a href="#">添加维生素 高钙高蛋白</a>
+                                </h3>
+                                <h3 class="shortTitle">
+                                    <a href="#">【新西兰本土版】Anchor 安佳 多维营养脱脂成人奶粉 900克/罐</a>
+                                </h3>
+                                <p class="price">
+                                    <b>￥</b>
+                                    199
+                                    <span>￥</span>
+                                    <del>399</del>
+                                </p>
+                                <div class="process process-limit">剩余50件</div>
+                                <a class="btn f-hover" href="#">立即抢购</a>
+                            </div>
+                        </li>
+                        <li class="goods f-cb">
+                            <a class="pic" href="#">
+                                <img src="img/jrxsg-3.jpg" alt="" class="img-lazyload img-lazyloaded">
+                            </a>
+                            <div class="detail">
+                                <h3 class="intro">
+                                    <a href="#">水光透亮肌肤秘诀</a>
+                                </h3>
+                                <h3 class="shortTitle">
+                                    <a href="#">EAORON耀妆 玻尿酸高效保湿护肤套装</a>
+                                </h3>
+                                <p class="price">
+                                    <b>￥</b>
+                                    216
+                                    <span>￥</span>
+                                    <del>598</del>
+                                </p>
+                                <div class="process process-limit">限量100件</div>
+                                <a class="btn f-hover" href="#">立即抢购</a>
+                            </div>
+                        </li>
+                        <li class="goods f-cb">
+                            <a class="pic" href="#">
+                                <img src="img/jrxsg-4.jpg" alt="" class="img-lazyload img-lazyloaded">
+                            </a>
+                            <div class="detail">
+                                <h3 class="intro">
+                                    <a href="#">Pampers 帮宝适</a>
+                                </h3>
+                                <h3 class="shortTitle">
+                                    <a href="#">【官方直采】Pampers 帮宝适一级帮 L36片/包 2包装 拉拉裤箱装</a>
+                                </h3>
+                                <p class="price">
+                                    <b>￥</b>
+                                    219
+                                    <span>￥</span>
+                                    <del>299</del>
+                                </p>
+                                <div class="process process-limit">限量100件</div>
+                                <a class="btn f-hover" href="#">立即抢购</a>
+                            </div>
+                        </li>-->
+                    </ul>
+                    <aside class="aside">
+                        <!--<a href="#" class="pic">
+                            <img src="img/jrxsg-5.png" alt="" class="img-lazyload img-lazyloaded">
+                        </a>-->
+                    </aside>
+                </section>
+            </article>
+            <!--今日上新-->
+            <article id="jrsx" class="m-recomds-new">
+                <h2 class="w-titl w-titl-1 tit w-title-line">
+                    <span class="big">今日上新</span>全世界好物，0点更新
+                    <a class="more" href="#">进入新品频道&gt;</a>
+                </h2>
+                <div class="itmBox">
+                    <ul class="f-cb itmWrap">
+                        <!--<li class="itm item-brand-new">
+                            <a href="#">
+                                <div class="good-info">
+                                    <div class="image-wrap">
+                                        <img class="img f-hover" src="img/jrsx-1.jpg" alt="">
+                                    </div>
+                                    <div class="recomds-brand-mask">
+                                        <p class="desc">港式老牌糕点</p>
+                                        <p class="profix">
+                                            <span>
+                                                月饼每满
+                                                <i>199</i>
+                                                减
+                                                <i>20</i>
+                                                元
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="brand-info">
+                                    <div class="image-wrap">
+                                        <img src="img/jrsx-1-1.jpg" alt="">
+                                    </div>
+                                    <p class="brand-name">
+                                        <span>元朗荣华</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>-->
+                        <!--<li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img src="img/jrsx-2.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">5分钟商学院·商业篇(市场版)</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>35.86</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>49.8</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img src="img/jrsx-6.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">SunnyHills微热山丘 蜜丰糖脆蛋糕 7.5g*12片 进口蛋糕营养早餐网红零食小吃</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>80</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>100</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img src="img/jrsx-4.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">【 脂肪糖分代谢 肝胆肾健康】life Extension活性复合维生素B族60粒 美国直邮</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>214</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>500</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img src="img/jrsx-5.png" alt="">
+                            </a>
+                            <a class="tit" href="#">【颜值爆表不怕岁月】BONBACK乌鸡牌 冰糖燕窝45毫升*6瓶</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>169</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>499</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img src="img/jrsx-3.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">盛香珍  香辣味青豆 休闲旅游零食 240g/袋</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>17.9</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>30</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img src="img/jrsx-7.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">加油卡</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>150</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>300</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#" style="background:url(img/jrsx-8.jpg) left center no-repeat rgb(255,255,255);">
+                            </a>
+                            <a class="tit" href="#">09.15&nbsp;|&nbsp;每日上新新品</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </article>
+            <!--热门品牌-->
+            <article class="m-popbrands coverMarginBottom" id="pcBrandModuleId">
+                <h2 class="w-titl w-titl-1 w-title-line">
+                    <span class="big">热门品牌</span>
+                    全球精选，一网打尽
+                    <a class="more" href="#">
+                        换一批
+                        <b class="iconfont icon-refresh"></b>
+                    </a>
+                </h2>
+                <section class="cnt f-cb">
+                    <div class="fixedBrandWrap">
+                       <ul class="fixedBrand f-cb">
+                             <!--<li class="itm">
+                                <a href="#"><img class="img" src="img/rmpp-1-3.jpg" alt=""></a>
+                                <div class="txt">
+                                    <p class="name">SHISEIDO 资生堂</p>
+                                    <p class="desc">创造美丽生活的文化</p>
+                                </div>
+                            </li>
+                            <li class="itm">
+                                <a href="#"><img class="img" src="img/rmpp-1-2.jpg" alt=""></a>
+                            </li>
+                            <li class="itm">
+                                <a href="#"><img class="img" src="img/rmpp-1-1.jpg" alt=""></a>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <ul class="recomBrand f-cb">
+                        <!--<li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-2.jpg" alt="">
+                                <p class="desc">网易原创生活类品牌</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">429590人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>
+                        <li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-3.jpg" alt="">
+                                <p class="desc">基因级肌密修复</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">579093人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>
+                        <li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-4.jpg" alt="">
+                                <p class="desc">法兰西的浪漫玫瑰</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">510519人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>
+                        <li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-5.jpg" alt="">
+                                <p class="desc">科学配方 优质原材料</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">786336人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>
+                        <li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-6.jpg" alt="">
+                                <p class="desc">全球知名的运动品牌</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">153068人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>
+                        <li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-7.jpg" alt="">
+                                <p class="desc">打造健康肌肤</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">436690人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>
+                        <li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-8.jpg" alt="">
+                                <p class="desc">高雅与华丽的代名词</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">452684人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>
+                        <li class="itm">
+                            <div class="info" style="width:100%;">
+                                <img class="img" src="img/rmpp-9.jpg" alt="">
+                                <p class="desc">源自纽约的国际时尚品牌</p>
+                            </div>
+                            <div class="actions">
+                                <a class="follow" href="#">+关注</a>
+                                <p class="followers">793162人关注该品牌</p>
+                                <a class="enter" href="#">进入品牌</a>
+                            </div>
+                        </li>-->
+                    </ul>
+                </section>
+            </article>
+            <section class="m-profloorlist" id="j-productfloor">
+                <!--母婴专区-->
+                <article id="my" class="m-productfloor">
+                    <div class="w-titl w-titl-1 clearfix w-title-line">
+                        <h2 class="tit">
+                            <span class="big">母婴专区</span>
+                        </h2>
+                        <ul class="w-taglist clearfix">
+                            <li class="first">热搜词：</li>
+                            <li class="last"><a class="itm marked" href="#">花王旗舰</a></li>
+                            <li class="last"><a class="itm" href="#">家居出行</a></li>
+                            <li class="last"><a class="itm" href="#">童装童鞋</a></li>
+                            <li class="last"><a class="itm" href="#">辅食任选</a></li>
+                            <li class="last"><a class="itm marked" href="#">夏季童装</a></li>
+                            <li class="last"><a class="itm" href="#">孕妈塑身</a></li>
+                            <li class="last"><a class="itm" href="#">防妊娠纹</a></li>
+                        </ul>
+                        <a class="more" href="#">更多好货&gt;</a>
+                    </div>
+                    <div class="cont clearfix">
+                        <!--左-->
+                        <div class="part1">
+                            <a class="pic pic1" href="#">
+                                <!--<img class="img-lazyload opacity1 img-lazyloaded" src="img/my-1.jpg" alt="" width="330px;" height="541px;">-->
+                            </a>
+                            <ul class="w-secondlist clearfix">
+                                <li><a class="itm" href="#">
+                                    <span class="txt">大牌奶粉</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">纸尿裤</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">洗护喂养</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">营养辅食</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">孕妈专区</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">玩具专区</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!--中-->
+                        <div class="partm">
+                            <ul class="w-activlist clearfix">
+                                <!--<li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">辅食N元任选</h3>
+                                    <p class="desc s-fc2">最多99选9</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/my-2.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">用品N元任选</h3>
+                                    <p class="desc s-fc2">最多99选8</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/my-3.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">童装童鞋馆</h3>
+                                    <p class="desc s-fc2">最高188减100</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/my-4.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">玩具N元任选</h3>
+                                    <p class="desc s-fc2">最多99选10</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/my-5.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>-->
+                            </ul>
+                        </div>
+                        <!--右-->
+                        <div class="party m-prolist">
+                            <!--头-->
+                            <h3 class="title">
+                                最新热卖
+                                <table class="img-pagebox" cellpadding="0" cellspacing="0" border="0" style="z-index:11;">
+                                    <tbody>
+                                    <tr class="img_page">
+                                        <td class="pageBox">
+                                            <a class="idxicon" href="#"></a>
+                                            <a class="idxicon active" href="#"></a>
+                                            <a class="idxicon" href="#"></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h3>
+                            <div class="prolist">
+                                <div class="itemgroup" style="opacity:1;z-index:10;">
+                                    <!--<div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/my-lb-1-1.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【宝宝肠道护卫队】Culturelle 康萃乐 儿童益生菌粉 30袋/盒 2盒装">【宝宝肠道护卫队】Culturelle 康萃乐 儿童益生菌粉 30袋/盒 2盒装</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>278</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>398</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/my-lb-1-4.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="CALIFORNIA BABY 加州宝宝 桉树精华泡泡浴 384毫升">CALIFORNIA BABY 加州宝宝 桉树精华泡泡浴 384毫升</a>
+                                            </h3>
+
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>95</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>289</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/my-lb-1-3.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【酸奶口感 不上火】CHILDLIFE 童年时光 钙镁锌成长营养液 474毫升（6个月~12岁）">【酸奶口感 不上火】CHILDLIFE 童年时光 钙镁锌成长营养液 474毫升（6个月~12岁）</a>
+                                            </h3>
+
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>171</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>228</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/my-lb-1-2.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【经典款】MAXI-COSI 迈可适 Pria 70 汽车儿童安全座椅0-7岁">【经典款】MAXI-COSI 迈可适 Pria 70 汽车儿童安全座椅0-7岁</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>799</strong>
+                                                <span class="item2">￥
+                                                    <del>998</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热门品牌-->
+                    <div class="w-logolist clearfix coverMarginBottom">
+                        <div class="txt">热卖品牌</div>
+                        <div class="brandListContainer">
+                            <!--<a class="pic" href="#">
+                                <img src="img/1-rmai-1.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/1-rmai-2.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/1-rmai-3.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/1-rmai-4.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/1-rmai-5.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>-->
+                        </div>
+                    </div>
+                </article>
+                <!--美容彩妆-->
+                <article id="meir" class="m-productfloor">
+                    <div class="w-titl w-titl-1 clearfix w-title-line">
+                        <h2 class="tit">
+                            <span class="big">美容彩妆</span>
+                        </h2>
+                        <ul class="w-taglist clearfix">
+                            <li class="first">热搜词：</li>
+                            <li class="last"><a class="itm marked" href="#">面膜</a></li>
+                            <li class="last"><a class="itm" href="#">防晒</a></li>
+                            <li class="last"><a class="itm" href="#">口红</a></li>
+                            <li class="last"><a class="itm" href="#">洁面</a></li>
+                            <li class="last"><a class="itm marked" href="#">底妆</a></li>
+                            <li class="last"><a class="itm" href="#">水乳</a></li>
+                            <li class="last"><a class="itm" href="#">卸妆</a></li>
+                        </ul>
+                        <a class="more" href="#">更多好货&gt;</a>
+                    </div>
+                    <div class="cont clearfix">
+                        <!--左-->
+                        <div class="part1">
+                            <a class="pic pic1" href="#">
+                                <!-- <img class="img-lazyload opacity1 img-lazyloaded" src="img/meir-1.jpg" alt="" width="330px;" height="541px;"> -->
+                            </a>
+                            <ul class="w-secondlist clearfix">
+                                <!-- <li><a class="itm" href="#">
+                                    <span class="txt">基础护肤</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">彩妆香氛</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">韩国美妆</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">人气面膜</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">超值量贩</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">日本美妆</span>
+                                </a></li> -->
+                            </ul>
+                        </div>
+                        <!--中-->
+                        <div class="partm">
+                            <ul class="w-activlist clearfix">
+                                <!-- <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">美妆热销专场</h3>
+                                    <p class="desc s-fc2">美妆热点盘点</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/meir-4.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">美容仪器馆</h3>
+                                    <p class="desc s-fc2">热门美颜新科技</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/meir-5.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">美妆面膜馆</h3>
+                                    <p class="desc s-fc2">人气面膜大搜罗</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/meir-2.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">美妆新品专场</h3>
+                                    <p class="desc s-fc2">尝新党剁手必看</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/my-3.jpg" alt="" width="180px;" height="144px;">
+                                </a></li> -->
+                            </ul>
+                        </div>
+                        <!--右-->
+                        <div class="party m-prolist">
+                            <!--头-->
+                            <h3 class="title">
+                                最新热卖
+                                <table class="img-pagebox" cellpadding="0" cellspacing="0" border="0" style="z-index:11;">
+                                    <tbody>
+                                    <tr class="img_page">
+                                        <td class="pageBox">
+                                            <a class="idxicon" href="#"></a>
+                                            <a class="idxicon active" href="#"></a>
+                                            <a class="idxicon" href="#"></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h3>
+                            <div class="prolist">
+                                <div class="itemgroup" style="opacity:1;z-index:10;">
+                                    <!-- <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/meir-lb-1.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="BIODERMA 贝德玛 舒妍温和保湿卸妆水 500毫升 粉水 敏感肌用">BIODERMA 贝德玛 舒妍温和保湿卸妆水 500毫升 粉水 敏感肌用</a>
+                                            </h3>
+
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>109</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>225</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/meir-lb-2.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="DoMeCare 欣兰 黑里透白冻膜 225g+城野医生水 100ml 【拍套餐享优惠】">DoMeCare 欣兰 黑里透白冻膜 225g+城野医生水 100ml 【拍套餐享优惠】</a>
+                                            </h3>
+
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>175</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>395</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/meir-lb-3.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="贝德玛 舒妍温和卸妆水 500毫升 蓝水 卸妆保养一瓶搞定">贝德玛 舒妍温和卸妆水 500毫升 蓝水 卸妆保养一瓶搞定</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>105</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>225</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/meir-lb-4.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【3件装】MEDIHEAL 美迪恵尔 N.M.F针剂水库保湿面膜 10片/盒【拍套餐享优惠】">【3件装】MEDIHEAL 美迪恵尔 N.M.F针剂水库保湿面膜 10片/盒【拍套餐享优惠】</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>186</strong>
+                                                <span class="item2">￥
+                                                    <del>507</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热门品牌-->
+                    <div class="w-logolist clearfix coverMarginBottom">
+                        <div class="txt">热卖品牌</div>
+                        <div class="brandListContainer">
+                            <!-- <a class="pic" href="#">
+                                <img src="img/2-rmai-1.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/2-rmai-2.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/2-rmai-3.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/2-rmai-4.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/2-rmai-5.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </article>
+                <!--服饰鞋包-->
+                <article id="shirt" class="m-productfloor">
+                    <div class="w-titl w-titl-1 clearfix w-title-line">
+                        <h2 class="tit">
+                            <span class="big">服饰鞋包</span>
+                        </h2>
+                        <ul class="w-taglist clearfix">
+                            <li class="first">热搜词：</li>
+                            <li class="last"><a class="itm marked" href="#">MK</a></li>
+                            <li class="last"><a class="itm" href="#">UGG</a></li>
+                            <li class="last"><a class="itm" href="#">Burberry</a></li>
+                            <li class="last"><a class="itm" href="#">迷人饰品</a></li>
+                            <li class="last"><a class="itm marked" href="#">MO&Co.</a></li>
+                            <li class="last"><a class="itm" href="#">ochirly</a></li>
+                            <li class="last"><a class="itm" href="#">黛安芬</a></li>
+                            <li class="last"><a class="itm" href="#">双肩包</a></li>
+                        </ul>
+                        <a class="more" href="#">更多好货&gt;</a>
+                    </div>
+                    <div class="cont clearfix">
+                        <!--左-->
+                        <div class="part1">
+                            <a class="pic pic1" href="#">
+                                <!-- <img class="img-lazyload opacity1 img-lazyloaded" src="img/shirt-1.jpg" alt="" width="330px;" height="541px;"> -->
+                            </a>
+                            <ul class="w-secondlist clearfix">
+                                <li><a class="itm" href="#">
+                                    <span class="txt">大牌女包</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">品质男包</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">精致手表</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">珠宝饰品</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">潮流女装</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">经典男装</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!--中-->
+                        <div class="partm">
+                            <ul class="w-activlist clearfix">
+                                <!-- <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">时尚博主教你“型”</h3>
+                                    <p class="desc s-fc2">亚历山大·王5.0折起</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/shirt-2.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">潮流服饰鞋靴会场</h3>
+                                    <p class="desc s-fc2">专柜同款 型格上新</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/shirt-3.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">美式轻奢品牌专场</h3>
+                                    <p class="desc s-fc2">新品包袋低至499元起</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/shirt-4.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">男人也要“千娇百媚”</h3>
+                                    <p class="desc s-fc2">男士臻品低至3.9折</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/shirt-5.jpg" alt="" width="180px;" height="144px;">
+                                </a></li> -->
+                            </ul>
+                        </div>
+                        <!--右-->
+                        <div class="party m-prolist">
+                            <!--头-->
+                            <h3 class="title">
+                                最新热卖
+                                <table class="img-pagebox" cellpadding="0" cellspacing="0" border="0" style="z-index:11;">
+                                    <tbody>
+                                    <tr class="img_page">
+                                        <td class="pageBox">
+                                            <a class="idxicon" href="#"></a>
+                                            <a class="idxicon active" href="#"></a>
+                                            <a class="idxicon" href="#"></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h3>
+                            <div class="prolist">
+                                <div class="itemgroup" style="opacity:1;z-index:10;">
+                                    <!-- <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/shirt-lb-1.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【蜜桃粉!】Fjallraven 瑞典北极狐 Kanken Classic 经典款双肩背包 F23510-319">【蜜桃粉!】Fjallraven 瑞典北极狐 Kanken Classic 经典款双肩背包 F23510-319</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>439</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>699</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/shirt-lb-2.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【领券立减80】Ray·Ban 雷朋 非偏光镜片 派对达人系列太阳眼镜 墨绿色 RB3016 W0365 镜片尺寸49毫米">【领券立减80】Ray·Ban 雷朋 非偏光镜片 派对达人系列太阳眼镜 墨绿色 RB3016 W0365 镜片尺寸49毫米</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>659</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>998</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/shirt-lb-3.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【2代短筒靴】UGG  Classic Mini II系列 女士防水防污羊皮短筒雪地靴">【2代短筒靴】UGG  Classic Mini II系列 女士防水防污羊皮短筒雪地靴</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>699</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>899</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/shirt-lb-4.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="网易严选 雪丝竹节纹男式隐形袜 5双装">网易严选 雪丝竹节纹男式隐形袜 5双装</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>39</strong>
+                                                <span class="item2">￥
+                                                    <del>39</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热门品牌-->
+                    <div class="w-logolist clearfix coverMarginBottom">
+                        <div class="txt">热卖品牌</div>
+                        <div class="brandListContainer">
+                            <!-- <a class="pic" href="#">
+                                <img src="img/3-rmai-1.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/3-rmai-2.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/3-rmai-3.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/3-rmai-4.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/3-rmai-5.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </article>
+                <!--家居个护-->
+                <article id="homeju" class="m-productfloor">
+                    <div class="w-titl w-titl-1 clearfix w-title-line">
+                        <h2 class="tit">
+                            <span class="big">家居个护</span>
+                        </h2>
+                        <ul class="w-taglist clearfix">
+                            <li class="first">热搜词：</li>
+                            <li class="last"><a class="itm marked" href="#">吕</a></li>
+                            <li class="last"><a class="itm" href="#">碧然德</a></li>
+                            <li class="last"><a class="itm" href="#">乐而雅</a></li>
+                            <li class="last"><a class="itm" href="#">床品</a></li>
+                            <li class="last"><a class="itm marked" href="#">呵护口腔</a></li>
+                            <li class="last"><a class="itm" href="#">保温杯</a></li>
+                            <li class="last"><a class="itm" href="#">卡诗</a></li>
+                            <li class="last"><a class="itm" href="#">空气净化</a></li>
+                        </ul>
+                        <a class="more" href="#">更多好货&gt;</a>
+                    </div>
+                    <div class="cont clearfix">
+                        <!--左-->
+                        <div class="part1">
+                            <a class="pic pic1" href="#">
+                                <!-- <img class="img-lazyload opacity1 img-lazyloaded" src="img/homeju-1.jpg" alt="" width="330px;" height="541px;"> -->
+                            </a>
+                            <ul class="w-secondlist clearfix">
+                                <li><a class="itm" href="#">
+                                    <span class="txt">洗发护发</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">沐浴清洁</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">口腔护理</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">厨房餐饮</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">家装家纺</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">家居清洁</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!--中-->
+                        <div class="partm">
+                            <ul class="w-activlist clearfix">
+                                <!-- <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">秋季滋养正当时</h3>
+                                    <p class="desc s-fc2">雅顿身体乳低至75元/瓶</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/homeju-2.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">个人洗护任选专场</h3>
+                                    <p class="desc s-fc2">99元任选5件起</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/homeju-3.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">一屋不扫何以扫天下</h3>
+                                    <p class="desc s-fc2">满168立减40元起</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/homeju-4.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">唯有爱与下厨不可辜负</h3>
+                                    <p class="desc s-fc2">碧然德滤水壶低至119元</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/homeju-5.jpg" alt="" width="180px;" height="144px;">
+                                </a></li> -->
+                            </ul>
+                        </div>
+                        <!--右-->
+                        <div class="party m-prolist">
+                            <!--头-->
+                            <h3 class="title">
+                                最新热卖
+                                <table class="img-pagebox" cellpadding="0" cellspacing="0" border="0" style="z-index:11;">
+                                    <tbody>
+                                    <tr class="img_page">
+                                        <td class="pageBox">
+                                            <a class="idxicon" href="#"></a>
+                                            <a class="idxicon active" href="#"></a>
+                                            <a class="idxicon" href="#"></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h3>
+                            <div class="prolist">
+                                <div class="itemgroup" style="opacity:1;z-index:10;">
+                                    <!-- <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/homeju-lb-1.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="SHISEIDO 资生堂旗下 Fino  高效滋润渗透发膜 230克/罐">SHISEIDO 资生堂旗下 Fino  高效滋润渗透发膜 230克/罐</a>
+                                            </h3>
+
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>58</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>148</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/homeju-lb-2.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="Propolinse 比那氏蜂胶除口臭漱口水600毫升/瓶 2瓶装">Propolinse 比那氏蜂胶除口臭漱口水600毫升/瓶 2瓶装</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>79</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>128</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/homeju-lb-3.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="Lauríer 乐而雅 S系列 超薄瞬吸护翼日用卫生巾 20.5厘米 28片/包">Lauríer 乐而雅 S系列 超薄瞬吸护翼日用卫生巾 20.5厘米 28片/包</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>29</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>48</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/homeju-lb-4.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="熊野油脂 无硅弱酸性马油洗发水 600毫升/瓶 2瓶装">熊野油脂 无硅弱酸性马油洗发水 600毫升/瓶 2瓶装</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>69</strong>
+                                                <span class="item2">￥
+                                                    <del>129</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热门品牌-->
+                    <div class="w-logolist clearfix coverMarginBottom">
+                        <div class="txt">热卖品牌</div>
+                        <div class="brandListContainer">
+                            <!-- <a class="pic" href="#">
+                                <img src="img/4-rmai-1.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/4-rmai-2.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/4-rmai-3.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/4-rmai-4.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/4-rmai-5.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </article>
+                <!--营养保健-->
+                <article id="yyang" class="m-productfloor">
+                    <div class="w-titl w-titl-1 clearfix w-title-line">
+                        <h2 class="tit">
+                            <span class="big">营养保健</span>
+                        </h2>
+                        <ul class="w-taglist clearfix">
+                            <li class="first">热搜词：</li>
+                            <li class="last"><a class="itm marked" href="#">Swisse</a></li>
+                            <li class="last"><a class="itm" href="#">鱼油</a></li>
+                            <li class="last"><a class="itm" href="#">眼药水</a></li>
+                            <li class="last"><a class="itm" href="#">蔓越莓</a></li>
+                            <li class="last"><a class="itm marked" href="#">澳佳宝</a></li>
+                            <li class="last"><a class="itm" href="#">美容养颜</a></li>
+                            <li class="last"><a class="itm" href="#">减肥瘦身</a></li>
+                            <li class="last"><a class="itm" href="#">男性保健</a></li>
+                        </ul>
+                        <a class="more" href="#">更多好货&gt;</a>
+                    </div>
+                    <div class="cont clearfix">
+                        <!--左-->
+                        <div class="part1">
+                            <a class="pic pic1" href="#">
+                                <!-- <img class="img-lazyload opacity1 img-lazyloaded" src="img/yyang-1.jpg" alt="" width="330px;" height="541px;"> -->
+                            </a>
+                            <ul class="w-secondlist clearfix">
+                                <li><a class="itm" href="#">
+                                    <span class="txt">美容馆</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">瘦身馆</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">滋补馆</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">男性馆</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">运动馆</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">新品馆</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!--中-->
+                        <div class="partm">
+                            <ul class="w-activlist clearfix">
+                                <!-- <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">传统滋补</h3>
+                                    <p class="desc s-fc2">全场满399减150元</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/yyang-2.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">职场营养</h3>
+                                    <p class="desc s-fc2">护眼片低至88元</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/yyang-3.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">运动营养专场</h3>
+                                    <p class="desc s-fc2">美瑞克斯赛霸增肌粉低至288元</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/yyang-4.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">考拉海外分站</h3>
+                                    <p class="desc s-fc2">参天眼药水香港直邮</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/yyang-5.jpg" alt="" width="180px;" height="144px;">
+                                </a></li> -->
+                            </ul>
+                        </div>
+                        <!--右-->
+                        <div class="party m-prolist">
+                            <!--头-->
+                            <h3 class="title">
+                                最新热卖
+                                <table class="img-pagebox" cellpadding="0" cellspacing="0" border="0" style="z-index:11;">
+                                    <tbody>
+                                    <tr class="img_page">
+                                        <td class="pageBox">
+                                            <a class="idxicon" href="#"></a>
+                                            <a class="idxicon active" href="#"></a>
+                                            <a class="idxicon" href="#"></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h3>
+                            <div class="prolist">
+                                <div class="itemgroup" style="opacity:1;z-index:10;">
+                                    <!-- <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/yyang-lb-1.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【祛黄美颜好气色】Salus 莎露斯 Floradix 德国铁元草本营养液补铁养血绿色版500ml 2件">【祛黄美颜好气色】Salus 莎露斯 Floradix 德国铁元草本营养液补铁养血绿色版500ml 2件</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>199</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>598</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/yyang-lb-2.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【钙质易吸收，不腹胀】Swisse 钙&VD片 150片/罐 2罐">【钙质易吸收，不腹胀】Swisse 钙&VD片 150片/罐 2罐</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>162</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>378</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/yyang-lb-3.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【宋钟基同款】KGC 正官庄 everytime高丽参口服液 10ml*30支">【宋钟基同款】KGC 正官庄 everytime高丽参口服液 10ml*30支</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>668</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>888</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/yyang-lb-4.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【吴秀波同款】【日常关节保养】Schiff 维骨力氨糖软骨素片170粒 2瓶">【吴秀波同款】【日常关节保养】Schiff 维骨力氨糖软骨素片170粒 2瓶</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>369</strong>
+                                                <span class="item2">￥
+                                                    <del>369</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热门品牌-->
+                    <div class="w-logolist clearfix coverMarginBottom">
+                        <div class="txt">热卖品牌</div>
+                        <div class="brandListContainer">
+                            <!-- <a class="pic" href="#">
+                                <img src="img/5-rmai-1.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/5-rmai-2.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/5-rmai-3.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/5-rmai-4.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/5-rmai-5.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </article>
+                <!--数码家电-->
+                <article id="sma" class="m-productfloor">
+                    <div class="w-titl w-titl-1 clearfix w-title-line">
+                        <h2 class="tit">
+                            <span class="big">数码家电</span>
+                        </h2>
+                        <ul class="w-taglist clearfix">
+                            <li class="first">热搜词：</li>
+                            <li class="last"><a class="itm marked" href="#">电动牙刷</a></li>
+                            <li class="last"><a class="itm" href="#">耳机</a></li>
+                            <li class="last"><a class="itm" href="#">手机</a></li>
+                            <li class="last"><a class="itm" href="#">剃须刀</a></li>
+                            <li class="last"><a class="itm marked" href="#">榨汁机</a></li>
+                            <li class="last"><a class="itm" href="#">钢笔</a></li>
+                            <li class="last"><a class="itm" href="#">吹风机</a></li>
+                            <li class="last"><a class="itm" href="#">咖啡机</a></li>
+                        </ul>
+                        <a class="more" href="#">更多好货&gt;</a>
+                    </div>
+                    <div class="cont clearfix">
+                        <!--左-->
+                        <div class="part1">
+                            <a class="pic pic1" href="#">
+                                <!-- <img class="img-lazyload opacity1 img-lazyloaded" src="img/sma-1.jpg" alt="" width="330px;" height="541px;"> -->
+                            </a>
+                            <ul class="w-secondlist clearfix">
+                                <li><a class="itm" href="#">
+                                    <span class="txt">爆款手机</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">个护电器</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">生活电器</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">厨房电器</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">智能影音</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">电脑办公</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!--中-->
+                        <div class="partm">
+                            <ul class="w-activlist clearfix">
+                                <!-- <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">数码家电热销榜</h3>
+                                    <p class="desc s-fc2">热门推荐一网打尽</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sma-2.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">数码NEW货榜</h3>
+                                    <p class="desc s-fc2">第一时间用上潮流款</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sma-3.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">历届IF奖大赏</h3>
+                                    <p class="desc s-fc2">用心种草 为你精选</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sma-4.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">历届红点奖大赏</h3>
+                                    <p class="desc s-fc2">以创新 致匠心</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sma-5.jpg" alt="" width="180px;" height="144px;">
+                                </a></li> -->
+                            </ul>
+                        </div>
+                        <!--右-->
+                        <div class="party m-prolist">
+                            <!--头-->
+                            <h3 class="title">
+                                最新热卖
+                                <table class="img-pagebox" cellpadding="0" cellspacing="0" border="0" style="z-index:11;">
+                                    <tbody>
+                                    <tr class="img_page">
+                                        <td class="pageBox">
+                                            <a class="idxicon" href="#"></a>
+                                            <a class="idxicon active" href="#"></a>
+                                            <a class="idxicon" href="#"></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h3>
+                            <div class="prolist">
+                                <div class="itemgroup" style="opacity:1;z-index:10;">
+                                    <!-- <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sma-lb-1.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="nathome 北欧欧慕 NSH0603 可折叠双电压电热水壶 旅行便携 0.6L 白色">nathome 北欧欧慕 NSH0603 可折叠双电压电热水壶 旅行便携 0.6L 白色</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>159</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>199</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sma-lb-2.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="Apple 苹果 AirPods 蓝牙无线耳机（MMEF2CH/A）">Apple 苹果 AirPods 蓝牙无线耳机（MMEF2CH/A）</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>699</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>898</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sma-lb-3.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="JBL GO2 音乐金砖二代 蓝牙音箱 低音炮 户外便携音响 迷你小音箱 可免提通话 防水设计">JBL GO2 音乐金砖二代 蓝牙音箱 低音炮 户外便携音响 迷你小音箱 可免提通话 防水设计</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>299</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>399</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sma-lb-4.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="PHILIPS 飞利浦钻石亮白型声波震动电动牙刷HX9362/67 粉钻">PHILIPS 飞利浦钻石亮白型声波震动电动牙刷HX9362/67 粉钻</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>869</strong>
+                                                <span class="item2">￥
+                                                    <del>1699</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热门品牌-->
+                    <div class="w-logolist clearfix coverMarginBottom">
+                        <div class="txt">热卖品牌</div>
+                        <div class="brandListContainer">
+                            <!-- <a class="pic" href="#">
+                                <img src="img/6-rmai-1.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/6-rmai-2.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/6-rmai-3.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/6-rmai-4.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/6-rmai-5.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </article>
+                <!--运动户外-->
+                <article id="sport" class="m-productfloor">
+                    <div class="w-titl w-titl-1 clearfix w-title-line">
+                        <h2 class="tit">
+                            <span class="big">运动户外</span>
+                        </h2>
+                        <ul class="w-taglist clearfix">
+                            <li class="first">热搜词：</li>
+                            <li class="last"><a class="itm marked" href="#">阿迪达斯</a></li>
+                            <li class="last"><a class="itm" href="#">耐克</a></li>
+                            <li class="last"><a class="itm" href="#">斯凯奇</a></li>
+                            <li class="last"><a class="itm" href="#">亚瑟士</a></li>
+                            <li class="last"><a class="itm marked" href="#">户外防晒</a></li>
+                            <li class="last"><a class="itm" href="#">土拨鼠</a></li>
+                            <li class="last"><a class="itm" href="#">智能穿戴</a></li>
+                        </ul>
+                        <a class="more" href="#">更多好货&gt;</a>
+                    </div>
+                    <div class="cont clearfix">
+                        <!--左-->
+                        <div class="part1">
+                            <a class="pic pic1" href="#">
+                                <!-- <img class="img-lazyload opacity1 img-lazyloaded" src="img/sport-1.jpg" alt="" width="330px;" height="541px;"> -->
+                            </a>
+                            <ul class="w-secondlist clearfix">
+                                <li><a class="itm" href="#">
+                                    <span class="txt">男运动鞋</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">女运动鞋</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">运动服饰</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">速干T恤</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">健身服饰</span>
+                                </a></li>
+                                <li><a class="itm" href="#">
+                                    <span class="txt">户外背包</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!--中-->
+                        <div class="partm">
+                            <ul class="w-activlist clearfix">
+                                <!-- <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">斯凯奇新品上市</h3>
+                                    <p class="desc s-fc2">热门鞋款低至5.7折</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sport-2.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">潮流运动焕新</h3>
+                                    <p class="desc s-fc2">阿迪耐克新品6折起</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sport-3.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">活力出游季</h3>
+                                    <p class="desc s-fc2">防晒装备低至39元起</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sport-4.jpg" alt="" width="180px;" height="144px;">
+                                </a></li>
+                                <li class="itm"><a class="pic" href="#">
+                                    <h3 class="tit">汽车用品养护专场</h3>
+                                    <p class="desc s-fc2">机油低至49.9元</p>
+                                    <img class="img-lazyload img-lazyloaded" src="img/sport-5.jpg" alt="" width="180px;" height="144px;">
+                                </a></li> -->
+                            </ul>
+                        </div>
+                        <!--右-->
+                        <div class="party m-prolist">
+                            <!--头-->
+                            <h3 class="title">
+                                最新热卖
+                                <table class="img-pagebox" cellpadding="0" cellspacing="0" border="0" style="z-index:11;">
+                                    <tbody>
+                                    <tr class="img_page">
+                                        <td class="pageBox">
+                                            <a class="idxicon" href="#"></a>
+                                            <a class="idxicon active" href="#"></a>
+                                            <a class="idxicon" href="#"></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </h3>
+                            <div class="prolist">
+                                <div class="itemgroup" style="opacity:1;z-index:10;">
+                                    <!-- <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sport-lb-1.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="SUUNTO 颂拓 TRAVERSE ALPHA 户外运动GPS 多功能腕表 远征阿尔法军表">SUUNTO 颂拓 TRAVERSE ALPHA 户外运动GPS 多功能腕表 远征阿尔法军表</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>3390</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>4290</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sport-lb-2.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="Adidas 三叶草 Superstar 黑白金标贝壳头男女滑板鞋运动板鞋">Adidas 三叶草 Superstar 黑白金标贝壳头男女滑板鞋运动板鞋</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>449</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>799</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sport-lb-3.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="NIKE耐克男女鞋 ROSHE ONE 男女奥利奥TANJUN 情侣休闲鞋">NIKE耐克男女鞋 ROSHE ONE 男女奥利奥TANJUN 情侣休闲鞋</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>329</strong>
+                                                <span class="item2">
+                                                    ￥
+                                                    <del>499</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="itemsale clearfix">
+                                        <a class="pic" href="#">
+                                            <img width="75px;" height="75px;" src="img/sport-lb-4.jpg" alt="">
+                                        </a>
+                                        <div class="proinfo">
+                                            <h3 class="tit">
+                                                <a class="protitle" href="#" title="【原厂进口】Shell 壳牌 超凡喜力全合成机油（灰壳）5W-40 4升装">PH【原厂进口】Shell 壳牌 超凡喜力全合成机油（灰壳）5W-40 4升装</a>
+                                            </h3>
+                                            <p class="curprice">
+                                                <span class="symbol">￥</span>
+                                                <strong>175</strong>
+                                                <span class="item2">￥
+                                                    <del>310</del>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热门品牌-->
+                    <div class="w-logolist clearfix coverMarginBottom">
+                        <div class="txt">热卖品牌</div>
+                        <div class="brandListContainer">
+                            <!-- <a class="pic" href="#">
+                                <img src="img/7-rmai-1.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/7-rmai-2.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/7-rmai-3.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/7-rmai-4.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a>
+                            <a class="pic"  href="#">
+                                <img src="img/7-rmai-5.jpg" alt="">
+                                <span class="follow"></span>
+                                <span class="toast">已关注</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!--猜你喜欢-->
+            <article id="ylike" class="m-recomds-new">
+                <h2 class="w-titl w-titl-1 tit w-title-line">
+                    <span class="big">猜你喜欢</span>根据你的浏览记录推荐的商品
+                </h2>
+                <div class="itmBox">
+                    <ul class="f-cb itemlike">
+                        <!--<li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img width="180px;" height="180px;" src="img/jrsx-1.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">SHISEIDO 资生堂 安耐晒小金瓶防晒露  60毫升 2018版本 防水防汗 </a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>196</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>300</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img width="180px;" height="180px;" src="img/ylike-2.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">unicharm 尤妮佳 Silcot省1/2化妆水化妆棉 40枚 四盒装</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>62</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>99</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img width="180px;" height="180px;" src="img/ylike-3.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">【自营 3瓶装】RE:CIPE 水晶防晒喷雾 150毫升/瓶  2018新版【拍套餐享优惠】</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>162</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>195</del>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="itm itm-goods">
+                            <a class="pic" href="#">
+                                <img width="180px;" height="180px;" src="img/ylike-4.jpg" alt="">
+                            </a>
+                            <a class="tit" href="#">【10件装】NARIS UP 娜丽丝 UV防晒喷雾 90克</a>
+                            <p class="price">
+                                <span class="cur">
+                                    ￥
+                                    <b>469</b>
+                                </span>
+                                <span class="mkt">
+                                    ￥
+                                    <del>999</del>
+                                </span>
+                            </p>
+                        </li>-->
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+    <!--3.引入底部-->
+    <footer>
+        <iframe src="index-footer.html" frameborder="0" class="my_footer"></iframe>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/my_lunbo.js"></script>
+    
+    <script src="js/timer.js">  </script>
+    <script src="js/my_header.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/*底部*/
+a{
+    color:#666;
+    outline:none;
+    cursor:pointer;
+    text-decoration:none;
+}
+footer,div,p{
+    margin:0;
+    padding:0;
+}
+div.footer{
+    margin-top:40px;
+    margin-bottom:100px;
+    text-align:center;
+    font-size:14px;
+    color:#666;
+}
+#aboutNEST{
+    height:115px;
+}
+#aboutNEST span.sep{
+    margin-left:20px;
+    margin-right:20px;
+
+}
+#aboutNEST span.m-license{
+    margin-left:20px;
+    margin-right:20px;
+    color:#999;
+}

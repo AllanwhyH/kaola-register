@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/details.css">
+    
+    <title>商品详情</title>
+</head>
+<body>
+    <!--1.引入头部-->
+    <header id="header" class="my_header"></header>
+    <!--2.中间部分-->
+    <article class="mainWrap">
+        <!--1.产品选项下拉框
+        <div id="catbarbox" class="crumbsbox">
+            <div class="crumbs f-cb">
+                <span class="f-fl txt">3C数码</span>
+                <span class="f-fl">&nbsp;>&nbsp;</span>
+                <div class="n-crumbbtn f-fl">
+                    <div class="btnbox">
+                        <a href="#" class="btn">手机/手机配件</a>
+                        <span class="v-icon"></span>
+                    </div>
+                </div>
+                <span class="f-fl">&nbsp;>&nbsp;</span>
+                <div class="n-crumbbtn f-fl">
+                    <div class="btnbox">
+                        <a href="#" class="btn">手机</a>
+                        <span class="v-icon"></span>
+                    </div>
+                </div>
+                <span class="f-fl">&nbsp;>&nbsp;</span>
+                <div class="n-crumbbtn f-fl">
+                    <div class="btnbox">
+                        <a href="#" class="btn">苹果</a>
+                        <span class="v-icon"></span>
+                    </div>
+                </div>
+                <span class="f-fl">&nbsp;>&nbsp;</span>
+                <span class="ellipsis f-fl f-fs13 crumbs-title">Apple 苹果 iPhone X 64GB 移动联通电信4G手机 国内行货</span>
+            </div>
+        </div>-->
+        <!--2.放大镜图片展示区-->
+        <div id="j-producthead">
+            <i sltye="display:none;"></i>
+            <!--大，中，小图片-->
+            <div class="PInfoWrap clearfix">
+                <div class="PImgBox m-productimgbox">
+                    <a href="javascript:void(0);" class="scrollBtn scrollleft sign scrollDis disabled" hidefocus="true"></a>
+                    <a href="javascript:void(0);" class="scrollBtn scrollRight sign scrollDis" hidefocus="true"></a>
+                    <div class="litimg_box">
+                        <ul id="litimgUl" class="clearfix" >
+                            <!--<li class="active">
+                                <a href="javascript:;">
+                                    <img src="img/sm-app-1.jpg" alt="" data-ml="img/lg-app-2.jpg" data-lg="img/lg-app-2.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;">
+                                        <img src="img/sm-list2.jpg" alt="">
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;">
+                                        <img src="img/sm-list3.jpg" alt="">
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;">
+                                        <img src="img/sm-list4.jpg" alt="">
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;"></a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;"></a>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div id="showImgBox" class="position-absolute">
+                        <div class="rankMark j-rankMark">
+                            <img src="img/wybt.png" alt="">
+                        </div>
+                        <img src="" alt="">
+                        <b id="mask" class="shadow d-none" ></b>
+                    </div>
+                    <div id="super-mask" class="position-absolute" ></div>
+                    <a href="#" class="showLocalImg sign icon-search2" id="showLocalImg" hidefoucs="true"></a>
+                    
+                    <div class="d-none" id="showDetails" >
+                        <img src="" alt="" id="showImgBig" style="top:0;left:0">
+                    </div>
+                </div>
+                <!--图片右边详情-->
+                <dl id="SP" class="PInfo PInfo-standout">
+                    <dt class="PTags f-hkdn">
+                        <i class="selftag tag">自营</i>
+                    </dt>
+                    <dt class="orig-country">
+                        <!--<img src="img/cri-usa.png" alt="">
+                        <span>美国</span>
+                        <span class="split">|</span>
+                        <a href="javascript:;" class="brand">Apple&nbsp;苹果</a>-->
+                    </dt>
+                    <dt id="Title" class="product-title">
+                        <!--<span>Apple&nbsp;苹果&nbsp;iPhone&nbsp;X&nbsp;64GB&nbsp;移动联通电信4G手机&nbsp;国内行货</span>-->
+                    </dt>
+                    <dt id="Details" class="subTit"><!--【开封不支持退货，请确认需求再开封】【未来已来】iPhone X 全面屏，全面绽放。--></dt>
+                    <!--限时时间-->
+                    <dd class="m-xianshi">
+                        <div class="m-xianshi-cnt xianshi-red xianshi-counting">
+                            <div class="m-xianshi-banner f-fl f-cb">
+                                <span class="left-circle f-fl"></span>
+                                <span class="u-title f-fl">限时购</span>
+                                <span class="right-circle f-fl"></span>  
+                            </div>
+                            <div class="u-xianshi-counter fl">该商品距结束还剩：
+                                <span class="num hour">01</span>时
+                                <span class="num min">01</span>分
+                                <span class="num sec">17</span>秒
+                                <span class="num milsec">7</span>
+                            </div>
+                        </div>
+                    </dd>
+                    <!--售价-->
+                    <dd id="Price" class="m-price-wrap">
+                        <!--<div class="m-price">
+                            <span class="m-line-title m-price-title j-price-title">售价</span>
+                            <div class="m-price-cnt">
+                                <span class="PInfo_r currentPrice">￥<span>6999.00</span>
+                                </span>
+                                <span class="PInfo_r marketPrice addprice j-marketprice">参考价格&nbsp;&nbsp;￥<span>8316.00</span>
+                                </span>
+                            </div>
+                        </div>-->
+                    </dd>
+                    <!--运费
+                    <dd class="postage">
+                        <span class="m-ilne-title">运费</span>
+                        <div class="msg">
+                            <span>
+                                <span class="form2">至</span>
+                                <div class="mr20 m-addrw">
+                                    <div class="m-addr"></div>
+                                </div>
+                            </span>
+                        </div>
+                    </dd>-->
+                    <!--服务-->
+                    <dd class="m-service f-cb f-hkdn">
+                        <span class="m-line-title f-fl">服务</span>
+                        <span class="send">本商品由&nbsp;自营国内仓&ensp;发货</span>
+                        <div style="padding-left:85px;">
+                            <ul class="m-postage-list">
+                                <li id="country" class="postage-item" style="margin-left:-27px;">
+                                    <!--<img class="postage-img" src="" alt="">
+                                    <p class="postage-title" >
+                                        <span class="m-tit">全球直采</span>
+                                    </p>
+                                    <span class="postage-line active"></span>-->
+                                </li>
+                                <li class="postage-item">
+                                    <img class="postage-img" src="img/cri-plan.png" alt="">
+                                    <p class="postage-title" >
+                                        <span class="m-tit">自营国内仓</span><span>发货</span>
+                                    </p>
+                                    <span class="postage-line "></span>
+                                </li>
+                                <li class="postage-item">
+                                    <img class="postage-img" src="img/cri-dwei.png" alt="">
+                                    <p class="postage-title" >杭州市
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--服务-->
+                        <div class="tomorrowarr f-fc j-tomorrowArrival">
+                            <span class="m-line-title f-fl">&ensp;</span>
+                            <span>24:00前完成支付，预计</span>
+                            <span class="f-bold">10月15日(周一)</span>
+                            <span>送达</span>
+                        </div>
+                        <!--内存+颜色-->
+                        <dd class="buyBox j-skubox" id="js_skuBox">
+                            <div class="skuWrap" id="j_skuwrap">
+                                <!--内存-->
+                                <div class="skuBox clearfix first-skubox last-skuBox">
+                                    <span class="m-line-title fl m-line-am-34">内存容量</span>
+                                    <div class="valueBox">
+                                        <ul class="clearfix">
+                                            <li class="selectedLi">
+                                                <a href="javascript:void(0);" hidefocus="true">
+                                                    <span >64GB</span>
+                                                </a>
+                                                <i></i>
+                                            </li>
+                                            <li class="selectedImgDesc">
+                                                <p class="selectedImgTit">已选择</p>
+                                                <p class="selectedDesc">64GB</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--颜色-->
+                                <div class="skuBox clearfix last-skuBox">
+                                    <span class="m-line-title fl m-line-am-54">颜色</span>
+                                    <div class="valueBox">
+                                        <ul class="clearfix">
+                                            <!--<li class="imgbox selectedLi" data-vid="" title="银色">
+                                                <a href="javascript:void(0);" hidefoucs="true">
+                                                    <img src="img/yanse-1.jpg" alt="" width="50px;" height="50px;">
+                                                </a>
+                                                <i>
+                                                    <span clas="i-con-checked"></span>
+                                                </i>
+                                            </li>
+                                            <li class="imgbox" data-vid="" title="深空灰">
+                                                <a href="javascript:void(0);" hidefoucs="true">
+                                                    <img src="img/yanse-2.jpg" alt="" width="50px;" height="50px;">
+                                                </a>
+                                            </li>
+                                            <li class="selectedImgDesc show">
+                                                <p class="selectedImgTit">已选择</p>
+                                                <p class="selectedDesc">银色</p>
+                                            </li>
+                                            <li class="selectedImgDesc">
+                                                <p class="selectedImgTit">已选择</p>
+                                                <p class="selectedDesc">银色</p>
+                                            </li>-->
+                                        </ul>
+                                    </div>  
+                                </div>
+                            </div>
+                        </dd> 
+                        <!--数量-->
+                        <dd class="m-buyBox">
+                            <span class="m-line-title fl m-line-am-30">数量</span>
+                            <em name="js_buyBox" class="buybox" id="j_buyboxnum">
+                                <span class="ctrnum-wrap">
+                                    <!--左：按钮-->
+                                    <a href="javascript:;" class="ctrnum-b ctrnum-b-rd icon-minus ctrnum-b-dis" hidefocus="true">-</a>
+                                    <input type="text" class="ctrnum-qty" value="1">
+                                    <!--右按钮-->
+                                    <a href="javascript:;" class="ctrnum-b ctrnum-b-ad icon-plus ctrnum-b-dis" hidefocus="true">+</a>
+                                </span>
+                            </em>
+                        </dd>  
+                        <!--说明-->
+                        <dd>
+                            <form action="" method="post" id="j-formEl">
+                                <div class="buynowonly-wrap clearfix">
+                                    <span class="f-fl m-line-title fl m-line-am-34">说明</span>
+                                    <ul class="buynowonly-tip-lis point clearfix">
+                                        <li class="f-fl">
+                                            <i class></i>正品保障
+                                        </li>
+                                        <li class="f-fl">
+                                            <i class="unsupport"></i>不支持7天无理由退货
+                                        </li>
+                                        <li class="f-fl">
+                                            <i class="unsupport"></i>不可使用优惠券
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--立即购买：按钮-->
+                                <div class="buyBtns">
+                                    <a id="buyBtn" class="j-buynow-btn" href="javascript:void(0)">立即购买</a>
+                                    <a id="addCart" class="j-add2Cart-btn" href="javascript:void(0);" hidefocus="true">
+                                        <span class="sign icon-cart20 icon-cart">加入购物车</span> 
+                                    </a>
+                                </div>
+                            </form>
+                        </dd>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--相关推荐-->
+        <div id="comboRecbox" class="comborecbox f-hkdn">
+            <ul class="n-combotab">
+                <li class="itm">
+                    <a href="javascript:void(0);" class="v-link">相关推荐</a>
+                </li>
+            </ul>
+            <div id="j-listsimilar" class="newRecomWrap m-favrec">
+                <div class="m-reclst m-reclst-1 clearfix">
+                    <!--图1
+                    <div class="newRecomItemWrap newRecomItemWrap-1">
+                        <a href="#" class="itemIng">
+                            <img src="img/xgtj-1.jpg" alt="" style="opacity:1;" width="110px;" height="110px;">
+                        </a>
+                        <p class="itemTitle">
+                            <a class="protitle" href="#">Apple 苹果 iPhone8 Plus (A1864) 64GB 移动联通电信4G手机 国内行货</a>
+                        </p>
+                        <div class="itemInfo clearfix">
+                            <p class="price">
+                                <span class="symbol">￥</span>1499
+                                <span class="marprice">￥
+                                    <del>2288</del>
+                                </span>
+                            </p>
+                            <a href="#" class="comment">920 人已评价</a>
+                        </div>
+                    </div>-->
+                    <!--图2
+                    <div class="newRecomItemWrap newRecomItemWrap-2">
+                            <a href="#" class="itemIng">
+                                <img src="img/xgtj-2.jpg" alt="" style="opacity:1;" width="110px;" height="110px;">
+                            </a>
+                            <p class="itemTitle">
+                                <a class="protitle" href="#">Apple 苹果 iPhone8(A1863) 64GB 移动联通电信4G手机 国内行货</a>
+                            </p>
+                            <div class="itemInfo clearfix">
+                                <p class="price">
+                                    <span class="symbol">￥</span>5999
+                                    <span class="marprice">￥
+                                        <del>5999</del>
+                                    </span>
+                                </p>
+                                <a href="#" class="comment">1570 人已评价</a>
+                            </div>
+                    </div>-->
+                    <!--图3
+                    <div class="newRecomItemWrap newRecomItemWrap-3">
+                        <a href="#" class="itemIng">
+                            <img src="img/xgtj-3.jpg" alt="" style="opacity:1;" width="110px;" height="110px;">
+                        </a>
+                        <p class="itemTitle">
+                            <a class="protitle" href="#">Apple 苹果 iPhone8 Plus (A1864) 64GB 移动联通电信4G手机 国内行货</a>
+                        </p>
+                        <div class="itemInfo clearfix">
+                            <p class="price">
+                                <span class="symbol">￥</span>4999
+                                <span class="marprice">￥
+                                    <del>5099</del>
+                                </span>
+                            </p>
+                            <a href="#" class="comment">1728  人已评价</a>
+                        </div>
+                    </div>-->
+                    <!--图4
+                    <div class="newRecomItemWrap newRecomItemWrap-4">
+                        <a href="#" class="itemIng">
+                            <img src="img/xgtj-4.jpg" alt="" style="opacity:1;" width="110px;" height="110px;">
+                        </a>
+                        <p class="itemTitle">
+                            <a class="protitle" href="#">Apple 苹果 iPhone8 Plus (A1864) 64GB 移动联通电信4G手机 国内行货</a>
+                        </p>
+                        <div class="itemInfo clearfix">
+                            <p class="price">
+                                <span class="symbol">￥</span>4999
+                                <span class="marprice">￥
+                                    <del>5099</del>
+                                </span>
+                            </p>
+                            <a href="#" class="comment">1728  人已评价</a>
+                        </div>
+                    </div>-->
+                    <!--图5
+                    <div class="newRecomItemWrap newRecomItemWrap-5">
+                        <a href="#" class="itemIng">
+                            <img src="img/xgtj-5.jpg" alt="" style="opacity:1;" width="110px;" height="110px;">
+                        </a>
+                        <p class="itemTitle">
+                            <a class="protitle" href="#">Apple 苹果 iPhone X 256GB移动联通电信4G手机 国内行货</a>
+                        </p>
+                        <div class="itemInfo clearfix">
+                            <p class="price">
+                                <span class="symbol">￥</span>8388
+                                <span class="marprice">￥
+                                    <del>9605</del>
+                                </span>
+                            </p>
+                            <a href="#" class="comment">731  人已评价</a>
+                        </div>
+                    </div>-->
+                    <!--图6
+                    <div class="newRecomItemWrap newRecomItemWrap-6">
+                        <a href="#" class="itemIng">
+                            <img src="img/xgtj-6.jpg" alt="" style="opacity:1;" width="110px;" height="110px;">
+                        </a>
+                        <p class="itemTitle">
+                            <a class="protitle" href="#">Apple 苹果 iPhone X 64GB 移动联通4G手机 港版</a>
+                        </p>
+                        <div class="itemInfo clearfix">
+                            <p class="price">
+                                <span class="symbol">￥</span>6699
+                                <span class="marprice">￥
+                                    <del>7399</del>
+                                </span>
+                            </p>
+                            <a href="#" class="comment">542  人已评价</a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <!--商品详情-->
+        <diV class="j-imagedetail j-navinfo" id="goodsDetail">
+            <a href="https://www.kaola.com/footer/guarante.html">
+                <img style="width:100%;border: 1px solid #eaeaea;box-sizing:border-box;border-top:0" class="img-lazyload img-lazyloaded" src="img/detail-apple-1.png">
+            </a>
+            <div class="m-faketips f-hkdn">
+                <div class="icon">真</div>
+                <div class="cont">
+                    <p class="tit">假一赔十</p>
+                    <p class="info">网易考拉每一件商品都通过严苛的品质把关，保障正品，保障品质。特推出 “假一赔十” 的正品保障政策，杜绝一切假货，让您无忧购物。</p>
+                </div>
+            </div>
+            <!--视频内容-->
+            <div class="m-textarea">
+                <div class="textareabox"></div>
+                <div class="textareabox" id="textareabox">
+                    <!--<p style="text-align:center;">
+                        <video width="100%" controls="controls" poster="img/detail-apple-video.jpg" src="img/apple.mp4"></video>
+                    </p>
+                    <p style="text-align:center;">
+                        <img class="img-lazyload img-lazyloaded" src="img/detail-apple-1.png" alt="">
+                    </p>-->
+                </div>
+                <div class="textareabox"></div>
+            </div>
+            <div class="packdate">
+                <!--<img class="img-lazyload img-lazyloaded" height="542px" src="img/detail-apple-34.png">
+                <img class="img-lazyload img-lazyloaded" src="img/detail-apple-35.png" >
+                <div class="f-hkdn">
+                    <p style="display:inline-block;width:710px;">
+                        <img class="img-lazyload img-lazyloaded" src="img/detail-apple-36.jpg" >
+                    </p>
+                    <video id="qualityvideo" loop="loop" style="width:710px;margin-left:-3px" controls="true" poster="img/detail-apple-kaola.jpg" src="img/kaola.mp4"></video>
+                </div>-->
+            </div>
+        </diV>
+        <!--告知消费者-->
+        <div class="m-priceintro j-priceintro f-hkdn">
+            <h4 class="tlt">价格说明：</h4>
+            <ol>
+                <li class="pitm">1、划线价、参考价：商品展示的划线价或参考价可能是品牌专柜价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在考拉上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。</li>
+                <li class="pitm">2、促销价：如无特殊说明，促销价是销售商在参考价基础上给予的优惠价格。如有疑问，您可以在购买前与客服联系。</li>
+                <li class="pitm">3、考拉价：考拉非会员用户购买的商品详情页显示的售价，是非会员用户最终决定是否购买该商品的依据。</li>
+                <li class="pitm">4、会员价：在考拉价的基础上给予会员用户的优惠价格，仅会员用户可以会员价购买该商品。</li>
+                <li class="pitm">5、价格异常：因可能存在系统缓存、页面更新延迟等不确定性情况，导致价格显示异常，商品具体售价请以订单结算页价格为准。如您发现异常情况出现，请立即联系我们补正，以便您能顺利购物。</li>
+            </ol>
+        </div>
+        <div class="m-customertips j-customertips f-hkdn">
+            <b>消费者告知书</b>
+            <div class="helpRightBox">
+                <div class="n-informctt">
+                    <h3>尊敬的客户：</h3>
+                    <p class="tip">您好！为帮助您更好地选购境外商品，
+                        <b>请您在购买前务必认真、详细阅读并完全理解本告知书的全部内容，并对自身风险承担做出客观判断。</b>同意本告知书内容后再下单购买：
+                    </p>
+                    <ul>
+                        <li>您在网易考拉上购买的境外商品等同于原产地直接销售商品，因此商品本身可能无中文标签，如果需要您可以通过网站查看相关商品标签中文翻译或联系客服。</li>
+                        <li>根据相关法律政策，您选购的境外商品仅限于个人自用，不得进行再次销售。</li>
+                        <li>您购买的境外商品符合原产地有关品质、健康、标识的相关标准，与我国产品标准或有所不同，由此可能造成的危害、损失或者其他风险，网易考拉不承担责任。</li>
+                        <li>网易考拉并非商品售卖方，商品均由商家向您提供，由商家承担其商品的质量保证责任。</li>
+                        <li>为了方便您对跨境电商模式的理解，可前往 <a href="#">跨境电商消费教育基地</a> 了解更多详情。</li>
+                    </ul>
+                    <p class="tip">网易考拉精选全球好货，严控每一个环节，为顾客提供正品保障。具体参见<a href="#">正品保障说明</a></p>
+                    <br>
+                    <p>谢谢！</p>
+                    <p class="f-fr">网易考拉</p>
+                </div>
+            </div>
+        </div>
+        
+    </article>
+    <!--3.引入底部-->
+    <footer>
+        <iframe src="index-footer.html" frameborder="0" class="my_footer" style="margin-top:20px"></iframe>
+    </footer>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/details.js"></script>
+<script src="js/my_header.js"></script>
+</html>

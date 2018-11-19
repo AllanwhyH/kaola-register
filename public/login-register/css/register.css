@@ -1,0 +1,376 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+div,p{
+    display:block;
+    margin:0 ;
+    padding:0 ;
+}
+input{
+    width:180px;
+    background:#fff;
+    border:0;
+    outline:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    color:#666;
+    outline:none;
+    cursor:pointer;
+    text-decoration:none;
+}
+/*中间的样式*/
+div.login-banner{
+    background-color:#f8f8f8;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-image:url(../img/bg.jpg);
+    width:100%;
+    height:520px;
+}
+div.m-loginBody{
+    position:relative;
+    width:1000px;
+    height:520px;
+    margin:0 auto;
+}
+div.m-loginBody .hotarea{
+    position:absolute;
+    left:10px;
+    top:100px;
+    width:400px;
+    height:280px;
+    background-image:url(../img/blank.gif);
+}
+div.m-loginWrap{
+    position:absolute;
+    top:48px;
+    right:40px;
+    border:1px solid #eaeaea;
+    background:#fff;
+    font-size:12px;
+    width:352px;
+    height:370px;
+}
+/*form顶部*/
+div.loginForm{
+    float:left;
+    width:350px;
+    height:366px;
+}
+div.loginForm .top{
+    width:350px;
+    height:52px;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    background-color:#f8f8f8;
+    font-size:16px;
+    line-height:52px;
+    color:#333;
+}
+.loginForm .top div{
+    float:left;
+    width:175px;
+    height:52px;
+    text-align:center;
+    cursor:pointer;
+    font-weight:bold;
+}
+.loginForm .top div.name1:hover{
+    color:#e31436;
+}
+.loginForm .top div.name2{
+    font-size:12px;
+    color:#333;
+}
+.loginForm .top div.name2 a{
+    color:#0aa1ed;
+}
+.loginForm .top span.line{
+    position:absolute;
+    left:175px;
+    top:17px;
+    width:0;
+    height:20px;
+    border-right:1px solid #ddd;
+}
+div.loginbox{
+    position:absolute;
+    top:53px;
+    left:0;
+    width:350px;
+    height:298px;
+}
+.regManager{
+    padding-top:20px;
+}
+div.loginbox-p{
+    float:left;
+    width:350px;
+    margin:0;
+    padding:20px 40px 15px 40px;
+    position:relative;
+}
+div.login-form{
+    width:270px;
+    height:263.469px;
+}
+#d1{
+    width:270px;
+    height:24px;
+    padding-bottom:10px;
+    margin:0 auto;
+    font:12px/1.14 "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+}
+div#d2{
+    width:270px;
+    height:36px;
+    border:1px solid #c5cddb;
+    background:#fff;
+    font-size:12px;
+}
+div#d2:hover,#d4 div.pwd:hover,#d5:hover{
+    border:1px solid #4aafe9;
+}
+div.u-logo{
+    width:39px;
+    height:34px;
+    padding:0 11px;
+    float:left;
+    text-align:center;
+}
+div.u-logo-img1{
+    background:url(../img/phone-suo.png) no-repeat;
+    background-position:-36px -34px;
+    width:17px;
+    height:18px;
+    margin-top:8px;
+}
+div.u-input{
+    width:180px;
+    height:30px;
+    margin:2px 0;
+    position:relative;
+    float:left;
+}
+div.u-input input{
+    padding-left:0;
+    height:30px;
+    font-size:14px;
+    font-weight:normal;
+    color:#333;
+}
+div .u-tip{
+    display: none;
+    float: right;
+    padding: 0 10px;
+}
+#d3{
+    width:270px;
+    height:28.47px;
+    margin-top:16px;
+    position:relative;
+}
+div.ScapTcha{
+    width:270px;
+    height:28.469px;
+}
+#d3 div.bg{
+    width:270px;
+    height:28.797px;
+    border-radius:13.4px;
+    background-color:#eee;
+    border:1px solid #ddd;
+}
+#d3 div.btn{
+    width:60.3px;
+    height:26.8px;
+    margin-left:1px;
+    cursor:pointer;
+    position:absolute;
+    display:block;
+    left:1px;
+}
+div.btn img{
+    height:26.8px;
+    width:60.3px;
+    position:absolute;
+}
+div.btn-text{
+    width:268px;
+    height:28px;
+    font-size:12px;
+    line-height:28px;
+    position:absolute;
+    left:30.15px;
+    opacity:1.04559;
+    color:#a8a8a8;
+    text-align:center;
+}
+#d4{
+    width:270px;
+    height:36px;
+    margin-top:16px;
+}
+#d4 .pwd{
+    width:270px;
+    height:36px;
+    border:1px solid #c5cddb;
+    background:#fff;
+    font-size:12px;
+    position:relative;
+}
+#d4 .btn-send{
+    position:absolute;
+    right:0;
+    width:97px;
+    height:34px;
+    margin-left:10px;
+}
+#d4 .btn-send a{
+    display:block;
+    width:97px;
+    height:34px;
+    border-left:1px solid #d5d5d5;
+    font-size:14px;
+    background-color:#eee;
+    line-height:32px;
+    text-align:center;
+}
+#d4 .pwd-input{
+    width:138px;
+    height:30px;
+    margin:2px 0 3px 0;
+    position:relative;
+    float:left;
+}
+#d4 .pwd-input input.pwdinput{
+    padding-left:8px;
+    margin:0 auto;
+    width:138px;
+    height:30px;
+    font-size:14px;
+    font-weight:normal;
+    color:#333;
+}
+div#d5{
+    width:270px;
+    height:36px;
+    border:1px solid #c5cddb;
+    background:#fff;
+    font-size:12px;
+}
+div.p-logo{
+    width:39px;
+    height:34px;
+    padding:0 11px;
+    float:left;
+    text-align:center;
+}
+div.p-logo-img1{
+    background:url(../img/phone-suo.png) no-repeat;
+    background-position:-68px -34px;
+    width:17px;
+    height:18px;
+    margin-top:8px;
+}
+div.p-input{
+    width:180px;
+    height:30px;
+    margin:2px 0;
+    position:relative;
+    float:left;
+}
+div.p-input input{
+    padding-left:0;
+    height:30px;
+    font-size:14px;
+    font-weight:normal;
+    color:#333;
+}
+div.change-email{
+    width:270px;
+    height:17px;
+    margin-top:6px;
+}
+div.btn-box{
+    width:270px;
+    height:36px;
+    margin-top:37px;
+    margin-bottom:10px;
+}
+div.btn-box a{
+    display:block;
+    width:270px;
+    height:36px;
+    background:#e31436;
+    color:#fff;
+    font-size:14px;
+    line-height:36px;
+    border-radius:2px;
+    text-align:center;
+}
+div.item{
+    width:270px;
+    height:31px;
+    padding:0 0 15px 0;
+    color:#999;
+}
+div.item .btn-read{
+    width:270px;
+    height:16px;
+    float:left;
+    margin-right:8px;
+}
+div.item .btn-read .u-checkbox{
+    float:left;
+    width:16px;
+    height:16px;
+    border:1px solid #aaa;
+    color:#999;
+    font-size:12px;
+    cursor:pointer;
+}
+div.item .btn-read .u-checkbox input{
+    width:16px;
+    height:16px;
+    border:0;
+    background:#fff;
+    padding-left:0;
+
+}
+div.item .btn-read span,div.item .btn-read label,div.item .btn-read a{
+    display:block;
+    float:left;
+}
+#read{
+    float:left;
+    height:16px;
+    padding-left:8px;
+    font-size:12px;
+    color:#999;
+    line-height:17px;
+}
+
+div.item a{
+    float:right;
+    height:12px;
+}
+div.item a:hover{
+    color:#666;
+}
+/*输入框的底部*/

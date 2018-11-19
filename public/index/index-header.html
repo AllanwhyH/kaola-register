@@ -1,0 +1,178 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index-header.css">
+    <link rel="stylesheet" href="css/base.css">
+    <title>头部-网易考拉-网易旗舰</title>
+</head>
+<body>-->
+    <div id="header" class="">
+        <!--1.顶部导航条-->
+        <nav class="topNav">
+            <div class="topNavWrap">
+                <!--welcome欢迎你+登录+注册+-->
+                <div id="signout" class="float-left">
+                    <a class="my_font my_a" href="#">考拉欢迎你！</a>
+                    <a id="btnLogin" class="my_font my_a ml-3 mr-3" href="#">登录</a>
+                    <a id="signout" class="my_font my_a" target="_blank" href="../login-register/register.html">免费注册</a>
+                </div>
+                <div id="signin" class="float-left">
+                    <a class="my_font my_a" href="#">考拉欢迎你！</a>
+                    <a id="btnLogin2" class="my_font my_a ml-3 mr-3" href="#"></a>
+                    <a id="btnSignout" class="my_font my_a" href="javascript:;">退出</a>
+                </div>
+                <!--手机考拉-->
+                <div class="float-left">
+                    <a class="my_font my_a ml-5" href="#">手机考拉</a>
+                </div>
+                <!--列表-->
+                <ul class="topNavRight float-right">
+                    <li class="mr-3"><a href="#" class="my_font my_a">每日签到</a><span>|</span></li>
+                    <li class="ml-3 mr-2"><a href="#" class="my_font my_a">我的的订单</a><span>|</span></li>
+                    <!--个人中心-->
+                    <li>
+                        <div class="hoverRed" >
+                            <a class="topHolder my_font" href="#" >个人中心
+                            </a>
+                            <i class="arr"></i>
+                            <!--个人中心的弹出框-->
+                            <div class="myDropMenu">
+                                <a href="#">我的优惠券</a>
+                                <a href="#">我的红包</a>
+                                <a href="#">我的考拉豆</a>
+                                <a href="#">账号管理</a>
+                                <a href="#">我的实名认证</a>
+                                <a href="#">我的收藏商品</a>
+                                <a href="#">我关注的品牌</a>
+                                <a href="#">售后服务</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--客户服务-->
+                    <li>
+                        <div class="hoverRed">
+                            <a href="#" class="topHolder my_font">客户服务
+                            </a>
+                            <i class="arr"></i>
+                            <div class="myDropMenu">
+                                <a class="position-relative" href="#"><i class="myDropMenu-img myDropMenu-logo1"></i>联系客服
+                                </a>
+                                <a href="#"><i class="myDropMenu-img myDropMenu-logo2"></i>帮助中心
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--充值中心-->
+                    <li>
+                        <div class="hoverRed">
+                            <a href="#" class="topHolder my_font">充值中心
+                            </a>
+                            <i class="arr"></i>
+                            <div class="myDropMenu">
+                                <a href="#">话费流量</a>
+                                <a href="#">游戏充值</a>
+                                <a href="#">AppStore充值码</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--消费者权益-->
+                    <li>
+                        <div class="hoverRed">
+                            <a href="#" class="topHolder my_font">消费者权益</a>
+                            <i class="arr"></i>
+                            <div class="myDropMenu">
+                                <a href="#">消费者告知书</a>
+                                <a href="#">消费者投诉公示</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--更多-->
+                    <li>
+                        <div class="hoverRed float-right">
+                            <a href="#" class="topHolder my_font">更多</a>
+                            <i class="arr"></i>
+                            <div class="myDropMenu">
+                                <a href="#">收藏本站</a>
+                                <a href="#">新浪微博</a>
+                                <a href="#">微信公众号</a>
+                                <a href="#">易信公众号</a>
+                                <a href="#">招商合作</a>
+                                <a href="#">考拉招聘</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--2.头部搜索条-->
+        <header id="docHead">
+            <div class="docHeadWrap">
+                <!--1.左：logo-->
+                <a class="logokaola" href="index.html"></a>
+                <!--2.中：搜索框-->
+                <div class="searchChipBox">
+                    <!--上：大搜索框-->
+                    <div class="tosearchbox">
+                        <!--搜索框-->
+                        <div id="tosearch">
+                            <!--左放大镜图标+搜索区域+右放大镜图标-->
+                            <div class="wrap">
+                                <input id="topSearchInput" type="text" placeholder="洗衣机槽清洁剂">
+                            </div>
+                            <span class="topsearchboxGround">
+                                <span class="topsearchBtn"></span>
+                            </span>
+                            <span class="myDropMenu-img w-icon"></span>
+                        </div>
+                        <!--搜索框内容产生的下拉菜单:暂时不做-->
+                        <div class="searchint"></div>
+                    </div>
+                    <!--下：分页条-->
+                    <ul id="suggestlist" class="m-suggestlist clearfix">
+                        <li class="suggestitem">
+                            <a href="#">电动牙刷</a>
+                        </li>
+                        <li class="suggestitem">
+                            <span class="sep">|</span>
+                            <a href="#">女包</a>
+                        </li>
+                        <li>
+                            <span class="sep">|</span>
+                            <a href="#">项链</a>
+                        </li>
+                        <li>
+                            <span class="sep">|</span>
+                            <a href="#">全球工厂店</a>
+                        </li>
+                        <li>
+                            <span class="sep">|</span>
+                            <a href="#">运动鞋</a>
+                        </li>
+                        <li>
+                            <span class="sep">|</span>
+                            <a href="#">减肥</a>
+                        </li>
+                        <li>
+                            <span class="sep">|</span>
+                            <a href="#">口红</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--3.右：购物车-->
+                <a id="cart" href="shoppcart.html" class="m-shopcartnew m-shopcartnew-1">
+                    <i class="shop-cart-icon"></i>
+                    <span class="wrap1">购物车
+                    </span>
+                </a>
+            </div>
+        </header>
+
+    </div>
+<!--</body>
+</html>-->
